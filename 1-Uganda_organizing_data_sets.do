@@ -416,26 +416,4 @@ global savingdest "${path1}${path2}Intermediate_output/"
 	sum avg_charge_injection if year==2004 & treatment==0
 	sum avg_charge_del if year==2004 & treatment==0
 	lincom -(0.25/0.031)*[ avg_charge_drugs]treatment-(0.25/0.052)*[ avg_charge_gentreat]treatment-(0.25/0.228)*[ avg_charge_injection]treatment-(0.25/0.289)*[avg_charge_del]treatment
-
-
-	** CREATE CONTROL VARIABLE FILE FOR COMPARISON REGRESSIONS **
-
-	*use  "/Users/ma.2557/Dropbox/Documents/CRCCL impact evaluation 2006/PtoP_QJE Replication/Replication/Data/final/hfmain_2004.dta",clear
-	use hfmain_2004.dta,clear
-	keep hfcode  avgDEL avgOP hhs hh_vill
-	merge hfcode using "/Users/ma.2557/Dropbox/Documents/CRCCL impact evaluation 2006/PtoP_QJE Replication/Replication/Data/final/average_charges_hflevel_2004.dta"
-	* merge hfcode using average_charges_hflevel_2004.dta
-	keep hfcode avgDEL avgOP hhs hh_vill  avg_charge_drugs avg_charge_gentreat avg_charge_injection avg_charge_del
-	rename avgDEL avgDEL_baseline
-	rename avgOP avgOP_baseline
-	sort hfcode
-	save "baselinecontrols.dta", replace
-
-	use "T25_2006_PreTreatVarsHF.dta", clear
-	keep hfcode avgOP avgDEL hhs hh_vill avg_charge_drugs avg_charge_gentreat avg_charge_injection avg_charge_del
-	rename avgDEL avgDEL_baseline
-	rename avgOP avgOP_baseline
-	sort hfcode
-	append using "baselinecontrols.dta"
-	sort hfcode
-	save "baselinecontrols.dta", replace	*/
+	*/
