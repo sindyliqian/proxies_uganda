@@ -1,6 +1,6 @@
 # Predicting Mortality Outcomes in Randomized Trials with Proxies: Preliminary Demonstration using Uganda Data
 
-This project applies the estimator developed in [Bastani (2019)](https://hamsabastani.github.io/proxies.pdf) to predict mortality outcome in a randomized controlled trial in global health. It attempts to use a proxy variable to improve the predictive accuracy on the true outcome of interest, mortality. Note that this is still work in progress, and here we present a preliminary demonstration on data from a study in Uganda. We may apply the technique to different data sets in the future.
+This project applies the estimator developed in [Bastani (2019)](https://hamsabastani.github.io/proxies.pdf) to predict mortality outcome in a randomized controlled trial in global health. It attempts to use a proxy variable, health clinic utilization, to improve the predictive accuracy on the true outcome of interest, mortality. Note that this is still work in progress, and here we present a preliminary demonstration on data from a study in Uganda. We may apply the technique to different data sets in the future.
 
 Write-up on the motivation, background, data, method and results are in `Uganda_health_proxy.ipynb`.
 
