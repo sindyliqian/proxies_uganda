@@ -4,6 +4,6 @@ This project applies the estimator developed in [Bastani (2019)](https://hamsaba
 
 Write-up on the motivation, background, data, method and results are in `Uganda_health_proxy.ipynb`.
 
-We use the data from [Björkman Nyqvist, Walque and Svensson (2017)](https://www.aeaweb.org/articles?id=10.1257/app.20150027), which can be downloaded [here](https://www.openicpsr.org/openicpsr/project/113630/version/V1/view). We also include the files in the folder `AEJ_authors_files`.
+We use the data from [Björkman Nyqvist, Walque and Svensson (2017)](https://www.aeaweb.org/articles?id=10.1257/app.20150027), which can be downloaded [here](https://www.openicpsr.org/openicpsr/project/113630/version/V1/view). We also include these files in the folder `AEJ_authors_files`.
 
-The Stata do files `1-Uganda_organizing_data_sets.do` and `2-Uganda_merging` were used to reorganize data provided by the authors. Data sets generated in the process are stored in the folder `Intermediate_output`, and were used to generate the data set used in this exercise, `Uganda_health.csv`.
+The Stata do files `1-Uganda_organizing_data_sets.do` and `2-Uganda_merging` were used to reorganize data sets provided by the authors. Data sets generated in the process are stored in the folder `Intermediate_output`, and were used to generate the data set used in this exercise, `Uganda_health.csv`.
